@@ -1,0 +1,92 @@
+@use "./variables";
+@use "./mixins" as *;
+
+.card-section {
+    display: flex;
+    justify-content:center;
+    column-gap: 50px;
+    margin-bottom: 50px;
+
+    &__header {
+        padding-left: 100px;
+        @include bold-font(2rem, variables.$primary-color);
+    }
+
+    &__card {
+        box-sizing: border-box;
+        border: solid 5px none;
+        height: 500px;
+        width: 350px;
+        background-size: cover;
+        border-radius: 10px;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        padding: 0 20px 20px 0;
+        box-shadow: 0px 5px 5px grey;
+        @include bold-font(2rem, white);
+
+    }
+
+    & a {
+        text-decoration:none;
+    }
+
+    &__hawaii {
+        background-image: url(../../assets/Images/hawaii.jpg);
+        position: relative;
+        display: flex;
+    }
+    &__iceland {
+        background-image: url(../../assets/Images/iceland.jpg);
+        position: relative;
+    }
+    &__greece {
+        background-image: url(../../assets/Images/greece.jpg);
+        position: relative;
+    }
+}
+
+
+.itinerary-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 200px 0;
+
+
+    &__card {
+        height: 450px;
+        width: 325px;
+        background-color: white;
+        display: block;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    &__activity {
+        padding: 20px;
+        margin: 10px 20px 0px 20px;
+        background-color: variables.$primary-background;
+        font-size: 1.4rem;
+    }
+
+    &__day {
+        border-bottom: solid 3px variables.$secondary-color;
+        margin: 20px 20px;
+    }
+
+    
+        
+}
+
+.itinerary__header {
+
+    color: white;
+
+    font-size: 7rem;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+
+}

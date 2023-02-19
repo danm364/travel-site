@@ -1,0 +1,68 @@
+@use "./variables";
+@use "./mixins" as *;
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-items: baseline;
+    background-color: #faf0e6;
+    padding: 50px 0;
+}
+
+
+.hours-section {   
+    &__container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__days p, &__hours p {
+        margin-top: 0;
+        display: inline-flex;
+        width: 180px;
+              
+    }
+
+}
+
+.section__header {
+    @include bold-font(2rem, variables.$primary-color)
+}
+
+.social-section {
+   display: flex;
+   flex-direction: column;
+    width: 150px;
+   &__imgs {
+    display: flex;
+    justify-content: space-between;
+   }
+}
+
+.fb {
+    width: 18px;
+    height: 34px;
+}
+
+.insta {
+    width: 34px;
+    height: 34px;
+}
+
+.twitter {
+    width: 38px;
+    height: 34px;
+}
+    
+.section__email, .hours-section__days {
+    color: variables.$orange-highlight;
+    font-size: 0.8rem;
+}
+
+.section__email-address, .hours-section__hours {
+    color: variables.$primary-color;
+  
+
+}

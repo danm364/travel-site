@@ -1,0 +1,35 @@
+@use "./variables";
+@use "./mixins" as *;
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #faf0e6;
+
+
+    &__text {
+        color: variables.$primary-color;
+        font-size: 1.2rem;
+        width: 650px;
+    }
+
+    &__btn {
+        border-radius: 25px;
+        color: white;
+        background-color: variables.$orange-highlight;
+        border: none;
+        width: 200px;
+        padding: 12px 0;
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+    }
+
+    &__header {
+        @include bold-font(3rem, variables.$primary-color);
+        flex-wrap: wrap;
+        width: 600px;
+        
+    }
+}

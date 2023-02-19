@@ -1,0 +1,9 @@
+@use "./variables.scss";
+
+@mixin bold-font($size, $color) {
+
+    font-weight: 700;
+    font-size: $size;
+    color: $color;
+
+}

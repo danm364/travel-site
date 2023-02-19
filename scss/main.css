@@ -1,0 +1,223 @@
+.nav-bar__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.nav-bar__destinations {
+  display: flex;
+}
+
+.nav-bar__destinations li {
+  padding-right: 1.5rem;
+  color: #00000b;
+  font-size: 1.25rem;
+}
+.nav-bar__destinations li a {
+  text-decoration: none;
+}
+.nav-bar__destinations li a:hover {
+  border-bottom: 3px solid #dc793e;
+  padding-bottom: 10px;
+}
+.nav-bar__destinations li a:link, .nav-bar__destinations li a:visited {
+  color: #00000b;
+}
+
+.nav-bar__name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #34568B;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #faf0e6;
+}
+.hero__text {
+  color: #34568B;
+  font-size: 1.2rem;
+  width: 650px;
+}
+.hero__btn {
+  border-radius: 25px;
+  color: white;
+  background-color: #dc793e;
+  border: none;
+  width: 200px;
+  padding: 12px 0;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.hero__header {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #34568B;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin-bottom: 50px;
+}
+.card-section__header {
+  padding-left: 100px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #34568B;
+}
+.card-section__card {
+  box-sizing: border-box;
+  border: solid 5px none;
+  height: 500px;
+  width: 350px;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 0 20px 20px 0;
+  box-shadow: 0px 5px 5px grey;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+}
+.card-section a {
+  text-decoration: none;
+}
+.card-section__hawaii {
+  background-image: url(../../assets/Images/hawaii.jpg);
+  position: relative;
+  display: flex;
+}
+.card-section__iceland {
+  background-image: url(../../assets/Images/iceland.jpg);
+  position: relative;
+}
+.card-section__greece {
+  background-image: url(../../assets/Images/greece.jpg);
+  position: relative;
+}
+
+.itinerary-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 200px 0;
+}
+.itinerary-section__card {
+  height: 450px;
+  width: 325px;
+  background-color: white;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+}
+.itinerary-section__activity {
+  padding: 20px;
+  margin: 10px 20px 0px 20px;
+  background-color: #faf0e6;
+  font-size: 1.4rem;
+}
+.itinerary-section__day {
+  border-bottom: solid 3px #00000b;
+  margin: 20px 20px;
+}
+
+.itinerary__header {
+  color: white;
+  font-size: 7rem;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  justify-items: baseline;
+  background-color: #faf0e6;
+  padding: 50px 0;
+}
+
+.hours-section__container {
+  display: flex;
+  flex-direction: column;
+}
+.hours-section__days p, .hours-section__hours p {
+  margin-top: 0;
+  display: inline-flex;
+  width: 180px;
+}
+
+.section__header {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #34568B;
+}
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+.social-section__imgs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fb {
+  width: 18px;
+  height: 34px;
+}
+
+.insta {
+  width: 34px;
+  height: 34px;
+}
+
+.twitter {
+  width: 38px;
+  height: 34px;
+}
+
+.section__email, .hours-section__days {
+  color: #dc793e;
+  font-size: 0.8rem;
+}
+
+.section__email-address, .hours-section__hours {
+  color: #34568B;
+}
+
+.hawaii-background {
+  background-image: url(../../assets/Images/hawaii.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.greece-background {
+  background-image: url(../../assets/Images/greece.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.iceland-background {
+  background-image: url(../../assets/Images/iceland.jpg);
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=main.css.map */
