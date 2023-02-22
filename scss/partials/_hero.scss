@@ -6,8 +6,14 @@
     justify-content: space-around;
     align-items: center;
     text-align: left;
+    flex-wrap: wrap;
     background-color: variables.$primary-background;
 
+    &__info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
     &__text {
         color: variables.$primary-color;
@@ -33,4 +39,14 @@
         width: 600px;
         
     }
+}
+
+@media screen and (max-width:500px) {
+
+    .hero-img {
+        width: 50%;
+        
+    }
+
+    
 }

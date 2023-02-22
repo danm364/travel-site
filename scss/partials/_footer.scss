@@ -8,6 +8,7 @@ footer {
     justify-items: baseline;
     background-color: #faf0e6;
     padding: 50px 0;
+    flex-wrap: wrap;
 }
 
 
@@ -15,6 +16,7 @@ footer {
     &__container {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         
     }
 
@@ -25,6 +27,11 @@ footer {
               
     }
 
+
+
+    &__open-times {
+        color: variables.$primary-color;
+    }
 }
 
 .section__header {
@@ -64,5 +71,41 @@ footer {
 .section__email-address, .hours-section__hours {
     color: variables.$primary-color;
   
+
+}
+
+@media screen and (max-width:930px) {
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+
+    .hours-section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+           
+        }
+
+        &__days, &__hours {
+            display: flex;
+            flex-direction: column;
+
+        
+        }
+
+        &__hours p {
+            font-size: 0.8rem;
+        }
+    }
 
 }

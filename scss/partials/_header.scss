@@ -3,6 +3,7 @@
 
 .nav-bar {
     background-color: variables.$nav-background;
+    
 
     &__list {
         list-style: none;
@@ -10,6 +11,7 @@
         justify-content: space-between;
         padding: 1rem 4rem;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__destinations {
@@ -56,4 +58,19 @@ body {
     padding: 0;
     font-family: Verdana,;
 
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .nav-bar {
+        text-align: center;
+    }
+
+    .nav-bar__list, .nav-bar__destinations {
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: baseline;
+    }
+    
 }
