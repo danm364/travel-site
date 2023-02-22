@@ -9,15 +9,18 @@
         display: flex;
         justify-content: space-between;
         padding: 1rem 4rem;
+        align-items: center;
     }
 
     &__destinations {
         display: flex;
+        list-style: none;
 
         & li {
             padding-right: 1.5rem;
             color: variables.$secondary-color;
             font-size: 1.25rem;
+            
             
             & a {
                 text-decoration: none;       
@@ -34,9 +37,15 @@
         }
     }
 
-    &__name a {
-        text-decoration: none;
-        @include bold-font(2rem, variables.$primary-color)
+    &__name {
+
+        list-style: none;
+
+        & a {
+            text-decoration: none;
+            
+            @include bold-font(2rem, variables.$primary-color)
+        }
     }
 }
 

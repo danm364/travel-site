@@ -6,9 +6,11 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 4rem;
+  align-items: center;
 }
 .nav-bar__destinations {
   display: flex;
+  list-style: none;
 }
 .nav-bar__destinations li {
   padding-right: 1.5rem;
@@ -24,6 +26,9 @@
 }
 .nav-bar__destinations li a:link, .nav-bar__destinations li a:visited {
   color: #00000b;
+}
+.nav-bar__name {
+  list-style: none;
 }
 .nav-bar__name a {
   text-decoration: none;
