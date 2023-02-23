@@ -5,20 +5,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: left;
-    flex-wrap: wrap;
+    flex-direction: row;
     background-color: variables.$primary-background;
+    flex-wrap: wrap;
 
     &__info {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        width: 40%;
     }
 
     &__text {
         color: variables.$primary-color;
         font-size: 1.2rem;
-        width: 650px;
+       
     }
 
     &__btn {
@@ -36,17 +37,28 @@
     &__header {
         @include bold-font(3rem, variables.$primary-color);
         flex-wrap: wrap;
-        width: 600px;
+        
         
     }
 }
 
 @media screen and (max-width:500px) {
 
-    .hero-img {
-        width: 50%;
+    .hero {
+        flex-direction: column;
+        align-content:normal;
         
     }
 
     
+
+    
+}
+
+@media screen and (max-width:832px) {
+    .hero-img {
+        width: 50%;
+        margin-top: 50px;
+        
+    }
 }
